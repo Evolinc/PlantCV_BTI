@@ -1,0 +1,5 @@
+indir	outdir	json_out	white_X	white_Y	deg	shift1_size	shift1_dir	shift2_size	shift2_dir	threshold	ROIx	ROIy	plantx	planty	radius
+raspiM_cameraA	raspiM_cameraA_image	raspiM_cameraA_results	1400	1000	181	100	Right	5	Bottom	100	50	60	295	300	135
+raspiM_cameraB	raspiM_cameraB_image	raspiM_cameraB_results	1350	1000	180	100	Right	300	Bottom	106	50	60	295	340	135
+raspiP_cameraA	raspiP_cameraA_image	raspiP_cameraA_results	1400	800	0	140	Right	90	Bottom	106	50	60	265	300	135
+raspiP_cameraB	raspiP_cameraB_image	raspiP_cameraB_results	1350	850	0	40	Right	150	Bottom	103	50	60	295	300	135
