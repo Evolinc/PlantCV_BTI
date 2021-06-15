@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #directory related to argument
-pipe_dir="/home/liangyu/1_Project/2_PlantCV/2_scripts"
+pipe_dir="/directory/to/pipelines"
 
 echo"**********The following scripts are required under the pipeline directory !***************" under the pipe_dir directory: 
 echo"1.multi_plant.py"
@@ -10,11 +10,12 @@ echo"3.s1_Image_distribution.sh"
 echo"4.s2_multiple_batch.sh"
 echo"5.s3_Rig_process.R"
 
-raw_dir="/home/liangyu/0_data/3_Raspi"
-parameter_code_dir="/home/liangyu/1_Project/2_PlantCV/5_Project/2_LncRNA_20201030/parameter_code"
-master_input_dir="/home/liangyu/1_Project/2_PlantCV/5_Project/2_LncRNA_20201030"
-master_json_dir="/home/liangyu/1_Project/2_PlantCV/5_Project/2_LncRNA_20201030/Results"
-master_output_dir="/home/liangyu/1_Project/2_PlantCV/5_Project/2_LncRNA_20201030/Results"
+parameter_code_dir="/directory/to/configuration file and python code"
+raw_dir="/directory/to/images"
+
+master_input_dir="/directory/to/images to be reorganized"
+master_json_dir="/directory/to/save output images"
+master_output_dir="/directory/to/save output json results"
 
 # STEP 1 allocate all images to certian directory
 bash $pipe_dir/s1_image_distribution_previous_stamp.sh -l $master_input_dir/photo_list -r $raw_dir -p $master_input_dir -t $master_input_dir/date_list
