@@ -41,7 +41,7 @@ for (num in numeric_list){
   Raspi[, num] <- as.numeric(as.character(Raspi[, num]))
 }
 
-#Orer the time series based on Plant-ID and month-day-hour-min manner
+#Order the time series based on Plant-ID and month-day-hour-min manner
 Raspi <- Raspi[
   order(Raspi[,19], Raspi[,20], Raspi[,21], Raspi[,22], Raspi[,18]),
 ]
